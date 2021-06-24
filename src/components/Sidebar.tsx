@@ -27,7 +27,7 @@ export default function Sidebar() {
                                     activeClassName="bg-gradient-to-tr bg-blue-200 text-white shadow-md"
                                 >
                                     <Icon color="primary">dashboard</Icon>
-                                    <p className="ml-8 text-lg font-semibold font-mono">Dashboard</p>
+                                    <p className="ml-8 text-lg font-semibold font-poppins">Dashboard</p>
                                 </NavLink>
                             </li>
                             <li className="rounded-lg mb-2">
@@ -37,7 +37,7 @@ export default function Sidebar() {
                                     activeClassName="bg-gradient-to-tr bg-blue-200 text-white shadow-md"
                                 >
                                     <Icon color="primary">note_alt</Icon>
-                                    <p className="ml-8 text-lg font-semibold font-mono">Blogs</p>
+                                    <p className="ml-8 text-lg font-semibold font-poppins">Blogs</p>
                                 </NavLink>
                             </li>
                             <li className="rounded-lg mb-2 ">
@@ -47,7 +47,7 @@ export default function Sidebar() {
                                     activeClassName="bg-gradient-to-tr bg-blue-200 text-white shadow-md"
                                 >
                                     <Icon color="primary">description</Icon>
-                                    <p className="ml-8 text-lg font-semibold font-mono">Request a leave</p>
+                                    <p className="ml-8 text-lg font-semibold font-poppins">Request a leave</p>
                                 </NavLink>
                             </li>
                             <li className="rounded-lg mb-2 text-gray-700">
@@ -57,7 +57,7 @@ export default function Sidebar() {
                                     activeClassName="bg-gradient-to-tr bg-blue-200 text-white shadow-md"
                                 >
                                     <Icon color="primary">upcoming</Icon>
-                                    <p className="ml-8 text-lg font-semibold font-mono">Holidays/Events</p>
+                                    <p className="ml-8 text-lg font-semibold font-poppins">Holidays/Events</p>
                                 </NavLink>
                             </li>
                             <li className="rounded-lg mb-2 text-gray-700">
@@ -67,7 +67,7 @@ export default function Sidebar() {
                                     activeClassName="bg-gradient-to-tr bg-blue-200 text-white shadow-md"
                                 >
                                     <Icon color="primary">lock_clock</Icon>
-                                    <p className="ml-8 text-lg font-semibold font-mono">Timesheet</p>
+                                    <p className="ml-8 text-lg font-semibold font-poppins">Timesheet</p>
                                 </NavLink>
                             </li>
                         </ul>
