@@ -1,4 +1,5 @@
 import Icon from "@material-ui/core/Icon";
+import { Link } from "react-router-dom";
 
 export default function Blogs() {
     return (
@@ -6,7 +7,9 @@ export default function Blogs() {
         <>
            <div className="px-3 md:px-2">
             <div className="grid md:grid-flow-col md:grid-cols-3 gap-4 font-poppins">
-                <div className="max-w-md py-4 px-4 bg-blue-200 rounded-lg h-44 overflow-hidden cursor-pointer" >
+
+                <Link to="/blog-details">
+                    <div className="max-w-md py-4 px-4 bg-blue-200 rounded-lg h-44 overflow-hidden cursor-pointer" >
                         <div>
                             <p className="flex justify-between">
                                 <span className="font-normal">
@@ -26,6 +29,7 @@ export default function Blogs() {
                             <a href="#" className="text-xl font-medium text-indigo-500">John Doe</a>
                         </div> */}
                     </div>
+                </Link>
                     <div className="max-w-md py-4 px-4 bg-blue-200 rounded-lg cursor-pointer">
                         <div>
                             <p className="flex justify-between">
