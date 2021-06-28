@@ -7,42 +7,42 @@ const columns = [
       name: "Sl.No",
       selector: "slno",
       sortable: true,
-      cell: (movies:any) => 
+      cell: (events:any) => 
         <div style={
           { fontWeight : 500,
             fontFamily : 'poppins',
             fontSize   :   'large'  
           }
-        }>{movies.slno}</div>,
+        }>{events.slno}</div>,
     },
     {
       name: "Title",
       selector: "title",
       sortable: true,
-      cell: (movies:any) => 
+      cell: (events:any) => 
       <div style={
         { fontWeight  : 500,
           fontFamily  : 'poppins',
           fontSize    :'large'  
         }
-      }>{movies.title}</div>,
+      }>{events.title}</div>,
     },
     {
       name: "Date",
       selector: "date",
       sortable: true,
       right: false,
-      cell: (movies:any) => 
+      cell: (events:any) => 
       <div style={
         { fontWeight  : 500,
           fontFamily  : 'poppins',
           fontSize    :'large' 
         }
-      }>{movies.date}</div>,
+      }>{events.date}</div>,
     }
 ];
 
-const movies = [
+const events = [
     {
         slno: 1,
         title: "New Year",
@@ -114,7 +114,7 @@ export default function Events() {
           <Card>
             <DataTable
               columns={columns}
-              data={movies}
+              data={events}
               defaultSortField="title"
               sortIcon={<SortIcon />}
               pagination
