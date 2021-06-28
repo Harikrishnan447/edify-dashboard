@@ -11,9 +11,11 @@ module.exports = {
                     200: "#2C2C2C", //text active
                     300: "#35375E",
                 },
-                gray: {
+                grey: {
                     100: "#F5F5FB", //bg grey
                     200: "#A2A2C2", //text inactive
+                    300: "#C4C4C4", //border
+
                 }
             },
             textColor: theme => ({
