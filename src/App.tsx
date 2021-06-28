@@ -15,11 +15,8 @@ function App() {
     <Router>
       <div>
         <Sidebar />
-        <div className="bg-white flex flex-row">
-              <div className="w-1/5 h-screen flex flex-col items-center bg-white">
-                
-              </div>
-              <div className="w-4/5 h-screen bg-gray-100">
+        <div className="md:ml-64">
+          <div className="bg-gray-100 pt-24 pb-28 px-3 md:px-8 h-screen">
                   <Switch>
                       <Route exact path="/" component={Dashboard} />
                       <Route exact path="/blogs" component={Blogs}/>
@@ -28,7 +25,7 @@ function App() {
                       <Route exact path="/timesheet" component={Timesheet}/>
                       <Redirect from="*" to="/" />
                   </Switch>
-              </div>
+                  </div>
         </div>
       </div>
     </Router>

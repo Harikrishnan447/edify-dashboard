@@ -16,3 +16,10 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.link::after{
+  content:"";
+  height:3px;
+  width:2px;
+  background:red;
+
+}
