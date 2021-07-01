@@ -6,6 +6,7 @@ import Events from './pages/Events';
 import Leave from './pages/Leave';
 import Timesheet from './pages/Timesheet';
 import BlogDetails from './pages/Blog-details';
+import Employees from './pages/Employees';
 import { BrowserRouter as Router,
          Route, 
          Redirect, 
@@ -25,6 +26,7 @@ function App() {
                       <Route exact path="/events" component={Events}/>
                       <Route exact path="/timesheet" component={Timesheet}/>
                       <Route exact path="/blog-details" component={BlogDetails}/>
+                      <Route exact path="/employees" component={Employees}/>
                       <Redirect from="*" to="/" />
                   </Switch>
                   </div>

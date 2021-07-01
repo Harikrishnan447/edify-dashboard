@@ -80,6 +80,17 @@ export default function Sidebar() {
                                  
                                 </NavLink>
                             </li>
+                            <li className="rounded-lg mb-4">
+                                <NavLink
+                                    to="/employees"
+                                    exact
+                                    className="flex items-center gap-8 text-sm text-grey-200 font-base font-medium tracking-wide px-4 py-3 rounded-lg"
+                                    activeClassName="bg-gradient-to-tr text-black-200 bg-grey-100"
+                                >
+                                    <Icon color="primary">people_alt</Icon>
+                                        Employees
+                                </NavLink>
+                            </li>
                         </ul>
                     </div>
                 </div>

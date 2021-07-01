@@ -110,12 +110,12 @@ const customStyles = {
 
 export default function Events() {
     return (
-        <div className="mt-20 py-5 px-8">
+        <div className="mt-6 py-5 px-8">
           <Card>
             <DataTable
               columns={columns}
               data={events}
-              defaultSortField="title"
+              defaultSortField="slno"
               sortIcon={<SortIcon />}
               pagination
               selectableRows
