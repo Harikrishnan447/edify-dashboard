@@ -22,7 +22,7 @@ const blogs = [
 ]
 
 export default function Blogs() {
-    const [showSidebar, setShowSidebar] = useState("-left-80");
+    const [showSidebar, setShowSidebar] = useState("-left-80 md:-left-96");
 
     function onDrop(picture : any) {
         console.log(picture);
@@ -37,7 +37,7 @@ export default function Blogs() {
                 <Icon color="primary">edit</Icon>
             </button>
         </div>
-        <div className="px-3 md:px-2">
+        <div className="px-3 md:px-2 mt-2">
             <div className="grid md:grid-flow-col md:grid-cols-3 gap-4 font-poppins">
                 {blogs.map((blog, index) => (
                 <div key={index}>
@@ -61,11 +61,11 @@ export default function Blogs() {
             </div>
         </div>
         <div
-                className={`h-screen fixed top-0 md:right-0 ${showSidebar} flex-row flex-nowrap shadow-xl bg-white w-80 z-10 py-4 px-6 transition-all duration-300`}
+                className={`h-screen fixed top-0 md:right-0 ${showSidebar} flex-row flex-nowrap shadow-xl bg-white w-80 md:w-96 z-10 py-4 px-6 transition-all duration-300`}
             >
                 <div className="flex-col items-stretch min-h-full flex-nowrap pt-4 relative">
                     <div className="flex justify-end">
-                        <button className=""  onClick={() => setShowSidebar('-left-80')} >
+                        <button className=""  onClick={() => setShowSidebar('-left-80 md:-left-96')} >
                             <Icon color="primary">close</Icon>
                         </button>
                     </div>
