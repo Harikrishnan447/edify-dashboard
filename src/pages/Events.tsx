@@ -145,7 +145,7 @@ export default function Events() {
                     </button>
                 </div>
                 <div className="mt-4">
-                    <span className="text-lg font-bold font-poppins">Add an employee</span>
+                    <span className="text-lg font-bold font-poppins">Add an event</span>
                 </div>
                 <div className="flex flex-col mt-8">
                     <label className="block text-gray-700 text-sm font-semibold font-poppins mb-2">
