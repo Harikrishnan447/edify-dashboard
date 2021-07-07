@@ -7,17 +7,20 @@ const blogs = [
     {
         title: "😃 William",
         date:"28/06/2021",
-        content:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae dolores deserunt ea doloremque natus error Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt labore quam recusandae!"
+        content:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae dolores deserunt ea doloremque natus error Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt labore quam recusandae!",
+        background:"bg-blue-400"
     },
     {
         title: "😃 Chris",
         date:"29/06/2021",
-        content:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae dolores deserunt ea doloremque natus error Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt labore quam recusandae!"
+        content:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae dolores deserunt ea doloremque natus error Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt labore quam recusandae!",
+        background:"bg-green-400"
     },
     {
         title: " 😃 Rose",
         date:"30/06/2021",
-        content:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae dolores deserunt ea doloremque natus error Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt labore quam recusandae!"
+        content:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae dolores deserunt ea doloremque natus error Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt labore quam recusandae!",
+        background:"bg-pink-400"
     }
 ]
 
@@ -42,7 +45,7 @@ export default function Blogs() {
                 {blogs.map((blog, index) => (
                 <div key={index}>
                     <Link to="/blog-details">
-                        <div className="max-w-md py-4 px-4 bg-blue-200 rounded-lg h-44 overflow-hidden cursor-pointer" >
+                        <div className={`max-w-md py-4 px-4 ${blog.background} rounded-lg h-44 overflow-hidden cursor-pointer`}>
                             <div>
                                 <p className="flex justify-between">
                                     <span className="font-normal">{blog.date}</span>
